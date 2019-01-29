@@ -1,0 +1,307 @@
+html, body {
+  width: 100%;
+  overflow: hidden;
+}
+.wp{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;            
+}
+.page{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.img-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.img-wrap img {
+  max-width: 100%;
+}
+.page {
+  background-color: #e2ecf5;
+}
+/* 箭头 */
+@-webkit-keyframes start {
+  0%,30% {
+    opacity: 0;
+    -webkit-transform: translate(0,10px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, -5px);
+  }
+}
+@keyframes start {
+  0%,30% {
+    opacity: 0;
+    transform: translate(0,10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -5px);
+  }
+}
+.start{
+  position: fixed;
+  left: 50%;
+  margin-left: -17px;
+  top: 95%;
+  margin-top: -34px;
+  width: 34px;
+  height: 34px;
+}
+.start i{
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  margin-left: -9px;
+  width: 19px;
+  height: 12px;
+  background-size: 100% 100%;
+  -webkit-animation: start 2s infinite ease-in-out;
+  animation: start 2s infinite ease-in-out;
+}
+
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 934283 */
+  src: url('http://at.alicdn.com/t/font_934283_rjwklbuzkg.eot');
+  src: url('http://at.alicdn.com/t/font_934283_rjwklbuzkg.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_934283_rjwklbuzkg.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_934283_rjwklbuzkg.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_934283_rjwklbuzkg.svg#iconfont') format('svg');
+}
+@-webkit-keyframes rotate { 
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(360deg)
+  }
+}
+@keyframes rotate{
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(359deg)
+  }
+}
+.animation-100 {
+  animation-duration: 0.1s;
+}
+.animation-200 {
+  animation-duration: 0.2s;
+}
+.animation-300 {
+  animation-duration: 0.3s;
+}
+.animation-400 {
+  animation-duration: 0.4s;
+}
+.animation-500 {
+  animation-duration: 0.5s;
+}
+.animation-600 {
+  animation-duration: 0.6s;
+}
+.animation-700 {
+  animation-duration: 0.7s;
+}
+.animation-800 {
+  animation-duration: 0.8s;
+}
+.animation-900 {
+  animation-duration: 0.9s;
+}
+.animation-1500 {
+  animation-duration: 1.5s;
+}
+.animation-2000 {
+  animation-duration: 2s;
+}
+.animation-3000 {
+  animation-duration: 3s;
+}
+.animation-4000 {
+  animation-duration: 4s;
+}
+.animation-5000 {
+  animation-duration: 5s;
+}
+.animation-6000 {
+  animation-duration: 6s;
+}
+.animation-7000 {
+  animation-duration: 7s;
+}
+.animation-8000 {
+  animation-duration: 8s;
+}
+.animation-9000 {
+  animation-duration: 9s;
+}
+.animation-10000 {
+  animation-duration: 10s;
+}
+.flashing {
+  animation: fadeIn 0.7s ease 0s infinite alternate;
+}
+.pulseing {
+  animation: pulse 0.7s ease 0s infinite alternate;
+}
+.bounceing {
+  animation: bounce 1s ease 0s infinite alternate;
+}
+#play-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 30;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  line-height: 33px;
+  padding-right: 2px;
+  border: 2px solid #efefef;
+  text-align: center;
+  -webkit-transition-duration: 1s;
+  -webkit-animation: rotate 3s linear infinite;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+  color: #efefef;
+  box-shadow: 1px 2px 2px #777;
+}
+.anchorBL {
+  display: none !important;
+}
+/*.playing {
+  -webkit-transition-duration: 1s;
+  -webkit-animation: rotate 3s linear infinite;
+  animation: rotate 3s linear infinite;
+}*/
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hide {
+  display: none;
+}
+#map-msg {
+  height: 188px;
+  padding: 5px;
+  text-align: left;
+  line-height: 22px;
+  font-size: 14px;
+  padding-left: 3%;
+  background-color: #f6f6f6;
+}
+#map {
+  width: 100%;
+  height: calc(100% - 188px);
+}
+#map-msg p{
+  margin: 8px 0;
+}
+.red-icon {
+  color: #e60000;
+  margin-right: 5px;
+  font-size: 18px;
+}
+#location-btn {
+  position: absolute;
+  bottom: 188px;
+  right: 4px;
+  color: #555;
+  padding: 6px;
+}
+
+.full-bg, .photo-box {
+  background-size: cover;
+  background-position: center;
+}
+.photo-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.ele-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.radius-box {
+  width: 76%;
+  border: 1px solid #3a3f58;
+  height: 26px;
+  border-radius: 13px;
+  box-shadow: 0 0 2px #3a3f58;
+  left: 12%;
+  line-height: 26px;
+  color: #3a3f58;
+  font-size: 14px;
+  font-weight: 600;
+}
+.circle-box {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -22px;
+  border-radius: 50%;
+  border: 2px solid #3a3f58;
+  left: 50%;
+  margin-left: -20px;
+  line-height: 44px;
+  text-align: center;
+  background-color: #ecf1f7;
+}
+.circle-box img {
+  max-width: 70%;
+  vertical-align: middle;
+}
+.page1, .page2, .page3, .page4 {
+  color: #333;
+}
+.text-frame {
+  z-index: 2;
+  width: 84%;
+  height: 84%;
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  background-color: rgba(255, 255, 255, .4);
+  border: 2px solid #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.page5 .text-frame{
+  background-color: inherit;
+  z-index: 20;
+}
+.radius {
+  border-radius: 8px;
+  overflow: hidden;
+}

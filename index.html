@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>兵长&三笠 的婚礼邀请函</title>
+    <link rel="stylesheet" href="./public/css/zepto.fullpage.css">
+    <link rel="stylesheet" href="./public/css/animate.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <style type="text/css">
+        #loading-mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #e2ecf5;
+            z-index: 99;
+        }
+        .loading-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+            display: block;
+            width: 300px;
+            height: 300px;
+            border-radius: 3px;
+            font-size: 30px;
+            color: rgba(64, 158, 255, .5);
+            vertical-align: top;
+            text-align: center;
+        }
+        .loading-box p {
+            font-size: 16px;
+            margin: 16px 0;
+        }
+        .loading:before,
+        .loading:after,
+        .loading {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            color: inherit;
+            vertical-align: middle;
+            pointer-events: none;
+            border-radius: 50%;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation: loading 1.8s infinite ease-in-out;
+            animation: loading 1.8s infinite ease-in-out;
+        }
+        .loading {
+            color: currentcolor;
+            position: relative;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+            top: -1em;
+        }
+        .loading:before {
+            right: 100%;
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+        .loading:after {
+            left: 100%;
+        }
+        .loading:before,
+        .loading:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: inherit;
+            height: inherit;
+        }
+        @-webkit-keyframes loading {
+            0%, 80%, 100% {
+                box-shadow: 0 1em 0 -1em;
+            }
+            40% {
+                box-shadow: 0 1em 0 -.2em;
+            }
+        }
+        @keyframes loading {
+            0%, 80%, 100% {
+                box-shadow: 0 1em 0 -1em;
+            }
+            40% {
+                box-shadow: 0 1em 0 -.2em;
+            }
+        }
+        .load-img {
+            visibility: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        var loadSum = 0
+        var isMobile = null
+
+        function loadDone () {
+            loadSum ++
+        }
+
+        function pcTip () {
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+               console.log('mobile')
+               isMobile = true
+            } else {
+                console.log('pc')
+                loadSum = loadSum - 10
+                isMobile = false
+                document.getElementById('loading-txt').innerHTML = '请使用手机或其它移动设备打开!'
+            }
+        } 
+    </script>
+</head>
+<body>
+    <div id="loading-mask">
+        <div class="loading-box">
+            <div class="loading"></div>
+            <p id="loading-txt">加载中</p>
+        </div>
+    </div>
+    <div id="play-btn"><i class="iconfont" style="font-size: 20px;">&#xe617;</i></div>
+    <img class="load-img" onload="loadDone();pcTip()" src="./public/photo/1.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/2.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/3.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/4.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/6.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/7.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/8.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/9.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/10.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/11.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/12.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/13.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/14.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/15.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/16.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/17.jpg">
+    <img class="load-img" onload="loadDone()" src="./public/photo/18.jpg">
+    <div class="wp">
+        <div class="wp-inner">
+            <div class="page page1">
+                <div class="photo-wrap">
+                    <div 
+                        class="full-bg js-animate animated animation-8000" 
+                        style="background-image: url(./public/photo/1.jpg);width: 100%;height: 100%;position: absolute;top:0;left: 0;"
+                        data-sec="zoomCycle" data-time="0">
+                    </div>
+                    <div 
+                        class="full-bg js-animate animated animation-2000" 
+                        style="background-image: url(./public/photo/2.jpg);width: 100%;height: 100%;position: absolute;top:0;left: 0;"
+                        data-sec="myzoomIn" data-time="12500">
+                    </div>
+                    <div class="text-frame js-animate animated"
+                        data-animate="rotateIn" data-time="500">
+                         
+                    </div>
+                    <div class="text-frame js-animate animated"
+                        data-animate="rotateIn" data-time="1200"
+                        data-sec="pulseing"
+                        data-sectime="1200">
+                    </div>
+                </div>
+                <div class="ele-wrap">
+                    <h4 class="js-animate animated animation-500" 
+                        data-animate="bounceInDown" 
+                        data-time="500"
+                        data-sec="zoomOut"
+                        data-sectime="700"
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">准备</h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="bounceInRight"
+                        data-time="1500"
+                        data-sec="bounceOutUp" 
+                        data-sectime="500"
+                        style="position: absolute;top: 40%;left: 15%">准备</h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="bounceInLeft"
+                        data-time="1500"
+                        data-sec="bounceOutDown"
+                        data-sectime="500"
+                        style="position: absolute;top: 40%;right: 15%">好了吗</h4>
+
+                    <div class="js-animate animated animation-500"
+                        data-animate="bounceInDown"
+                        data-time="2500"
+                        data-sec="rotateOutDownLeft"
+                        data-sectime="500"
+
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">
+                        <h4>这</h4>
+                        <h4 style="margin-top: 10%;">是一个</h4>
+                    </div>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="swing" 
+                        data-time="3000"
+                        data-sec="zoomOutDown" 
+                        data-sectime="500"
+                        style="position: absolute;top: 20%;width: 100%;text-align: center;">
+                        甜蜜的
+                    </h4>
+                    <h4 class="js-animate animated animation-500" 
+                        data-animate="swing" 
+                        data-time="3500"
+                        data-sec="fadeOutUpBig" 
+                        data-sectime="500"
+                        style="position: absolute;top: 30%;width: 100%;text-align: center;">
+                        婚礼
+                    </h4>
+                    <h4 class="js-animate animated animation-500" 
+                        data-animate="swing" 
+                        data-time="3500"
+                        data-sec="fadeOutDownBig" 
+                        data-sectime="500"
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">
+                        邀请函
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInUp"
+                        data-time="4000"
+                        data-sec="fadeOutUp"
+                        data-sectime="500"
+                        style="position: absolute;top: 35%;width: 100%;text-align: center;">
+                        各位
+                    </h4>
+                    <!-- <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInUp"
+                        data-time="4500"
+                        data-sec="fadeOutUp"
+                        data-sectime="5000"
+                        style="position: absolute;top: 10%;width: 100%;text-align: center;">
+                        各位
+                    </h4> -->
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="4500"
+                        data-sec="zoomOut"
+                        data-sectime="3600"
+                        style="position: absolute;top: 25%;left: 18%;text-align: center;">
+                        姨娘
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="4700"
+                        data-sec="zoomOut"
+                        data-sectime="3400"
+                        style="position: absolute;top: 35%;right: 20%;text-align: center;">
+                        姨夫
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="4900"
+                        data-sec="zoomOut"
+                        data-sectime="3200"
+                        style="position: absolute;top: 48%;left: 22%;text-align: center;">
+                        伯伯
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="5100"
+                        data-sec="zoomOut"
+                        data-sectime="3000"
+                        style="position: absolute;top: 50%;right: 48%;text-align: center;">
+                        婶婶
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="5300"
+                        data-sec="zoomOut"
+                        data-sectime="2800"
+                        style="position: absolute;top: 30%;left: 50%;text-align: center;">
+                        姑姑
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="5500"
+                        data-sec="zoomOut"
+                        data-sectime="2600"
+                        style="position: absolute;top: 63%;right: 33%;text-align: center;">
+                        姑爷
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="5700"
+                        data-sec="zoomOut"
+                        data-sectime="2400"
+                        style="position: absolute;top: 36%;left: 25%;text-align: center;">
+                        侄儿
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="5900"
+                        data-sec="zoomOut"
+                        data-sectime="2200"
+                        style="position: absolute;top: 53%;right: 25%;text-align: center;">
+                        侄女
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="6100"
+                        data-sec="zoomOut"
+                        data-sectime="2000"
+                        style="position: absolute;top: 55%;left: 30%;text-align: center;">
+                        兄弟
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="6300"
+                        data-sec="zoomOut"
+                        data-sectime="1800"
+                        style="position: absolute;top: 20%;right: 30%;text-align: center;">
+                        姐妹
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="6500"
+                        data-sec="zoomOut"
+                        data-sectime="1600"
+                        style="position: absolute;top: 60%;left: 35%;text-align: center;">
+                        舅舅
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="6700"
+                        data-sec="zoomOut"
+                        data-sectime="1400"
+                        style="position: absolute;top: 40%;right: 40%;text-align: center;">
+                        舅妈
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="6900"
+                        data-sec="zoomOut"
+                        data-sectime="1200"
+                        style="position: absolute;top: 23%;left: 40%;text-align: center;">
+                        同事
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="7100"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 45%;right: 28%;text-align: center;">
+                        同学
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="myzoomIn"
+                        data-time="7300"
+                        data-sec="zoomOut"
+                        data-sectime="800"
+                        style="position: absolute;top: 58%;right: 20%;text-align: center;">
+                        好友
+                    </h4>
+
+                    <h4 class="js-animate animated animation-600"
+                        data-animate="bounceInDown"
+                        data-time="8000"
+                        data-sec="zoomOut"
+                        data-sectime="1500"
+                        style="position: absolute;top: 30%;width: 100%;text-align: center;">
+                        诚<br>挚
+                    </h4>
+                    <h4 class="js-animate animated animation-600"
+                        data-animate="bounceInUp"
+                        data-time="8500"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 45%;width: 100%;text-align: center;">
+                        邀<br>请
+                    </h4>
+
+                    <h4 class="js-animate animated animation-600"
+                        data-animate="zoomInLeft"
+                        data-time="9500"
+                        data-sec="slideOutUp"
+                        data-sectime="1100"
+                        style="position: absolute;top: 30%;width: 100%;text-align: center;">
+                        您
+                    </h4>
+                    <h4 class="js-animate animated animation-600"
+                        data-animate="zoomInLeft"
+                        data-time="10000"
+                        data-sec="slideOutDown"
+                        data-sectime="600"
+                        style="position: absolute;top: 45%;width: 100%;text-align: center;">
+                        携家人
+                    </h4>
+                    <h3 class="js-animate animated animation-500"
+                        data-animate="bounceInUp"
+                        data-time="11000"
+                        data-sec="zoomOutDown"
+                        data-sectime="600"
+                        style="position: absolute;top: 20%;width: 100%;text-align: center;letter-spacing: 3px;line-height: 40px;">
+                        参加<br>婚礼
+                    </h3>
+                    <h2 class="js-animate animated"
+                        data-animate="bounceInDown"
+                        data-time="12500"
+                        style="position: absolute;top: 28%;width: 100%;text-align: center;font-size: 32px;font-weight: 500;">
+                        我<br>们<br>结<br>婚<br>啦<br>!
+                    </h2>
+                </div>
+            </div>
+            <div class="page page2">
+                <div class="photo-wrap">
+                    <div
+                        class="full-bg js-animate animated animation-1000" 
+                        style="background-image: url(./public/photo/3.jpg);width: 100%;height: 100%;"
+                         data-animate="myzoomIn">
+                    </div>
+                </div>
+                <div class="ele-wrap">
+                    <div class="js-animate animated"
+                        data-animate="bounceInDown"
+                        data-time="0"
+                        style="position: absolute;top: 60%;width: 80%;left: 15%;text-align: center;">
+                        <img style="max-width: 100%;" src="./public/meta/wedding.png">
+                    </div>
+                    <div style="position: absolute;top: 69%;left: 0;width: 100%;text-align: center;height: 20%;">
+                        <img class="js-animate animated animation-1000" 
+                            data-animate="minzoomCycle" 
+                            data-time="500" src="./public/meta/hun.png"
+                            style="position: absolute;left: 15%;">
+                        <img class="js-animate animated animation-1000" 
+                            data-animate="minzoomCycle" 
+                            data-time="600" src="./public/meta/li.png"
+                            style="position: absolute;left: 30%;">
+                        <img class="js-animate animated animation-1000" 
+                            data-animate="minzoomCycle" 
+                            data-time="700" src="./public/meta/yao.png"
+                            style="position: absolute;left: 44%; top: 5%;">
+                        <img class="js-animate animated animation-1000" 
+                            data-animate="minzoomCycle" 
+                            data-time="800" src="./public/meta/qing.png"
+                            style="position: absolute;left: 56%;top: 5%;">
+                        <img class="js-animate animated animation-1000" 
+                            data-animate="minzoomCycle"
+                            data-time="900" src="./public/meta/han.png"
+                            style="position: absolute;left: 69%;top: 5%;">
+                    </div>
+                    <div class="js-animate animated animation-500 radius-box" 
+                        data-animate="rotateIn" 
+                        data-time="1500"
+                        style="position: absolute;top: 80%;text-align: center;">
+                    </div>
+                    <div class="js-animate animated animation-500 radius-box" 
+                        data-animate="rotateIn" 
+                        data-time="2000"
+                        style="position: absolute;top: 80%;text-align: center;">
+                        <div 
+                            class="js-animate animated animation-500" 
+                            data-animate="fadeInRight" data-time="2500"
+                            style="position: absolute;left: 10%;">
+                            新娘: 三笠
+                        </div>
+                        <div 
+                            class="js-animate animated animation-500" 
+                            data-animate="fadeInLeft" data-time="2500"
+                            style="position: absolute;right: 10%;">
+                            新郎: 兵长
+                        </div>
+                        <div 
+                            class="js-animate animated animation-800 circle-box" 
+                            data-animate="myzoomIn" data-time="3000"
+                            data-sec="shake" data-sectime="800">
+                            <img src="./public/meta/zuanshi.png">
+                        </div>
+                    </div>
+                    <div
+                        class="js-animate animated"
+                        data-animate="bounceInUp" data-time="3800"
+                        style="position: absolute;top: 88%;left: 0;width: 100%;text-align: center;color: #3a3f58;font-size: 14px;">
+                        欢迎12月25日参见我们的婚礼
+                    </div>
+                    <div
+                        class="js-animate animated animation-2000" 
+                        data-animate="zoomIn" data-time="5000"
+                        style="position: absolute;top: 95%;left: 0;width: 100%;text-align: center;">
+                        <img src="./public/meta/invitation.png" style="max-width: 75%;">
+                    </div>
+                </div>
+            </div>
+            <div class="page page3">
+                <div class="photo-wrap">
+                    <div 
+                        class="full-bg js-animate animated animation-5000" 
+                        style="background-image: url(./public/photo/6.jpg);width: 100%;height: 100%;"
+                        data-sec="zoomCycle" data-time="0">
+                     </div>
+                     <div 
+                        class="full-bg js-animate animated animation-800"
+                        style="background-image: url(./public/photo/4.jpg);width: 100%;height: 100%;position: absolute;top: 0;left: 0;"
+                        data-animate="zoomIn" data-time="10500">
+                     </div>
+                     <div class="text-frame js-animate animated"
+                        data-animate="bounceInUp" data-time="1000"
+                        data-sec="fadeOutUp"
+                        data-sectime="9000">
+                         
+                    </div>
+                    <div class="text-frame js-animate animated"
+                        data-animate="bounceInDown" data-time="1000"
+                        data-sec="fadeOutDown"
+                        data-sectime="9000">
+                    </div>
+                </div>
+                <div class="ele-wrap">
+                    <h4 class="js-animate animated animation-800" 
+                        data-animate="myzoomIn" 
+                        data-time="1500"
+                        data-sec="zoomOut"
+                        data-sectime="800"
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">她是</h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="bounceInRight"
+                        data-time="2500"
+                        data-sec="flipOutY"
+                        data-sectime="1000"
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">人见</h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="bounceInLeft"
+                        data-time="3000"
+                        data-sec="flipOutY"
+                        data-sectime="500"
+                        style="position: absolute;top: 50%;width: 100%;text-align: center;">人爱</h4>
+
+                    <div class="js-animate animated animation-500"
+                        data-animate="bounceInDown"
+                        data-time="4000"
+                        data-sec="zoomOutDown"
+                        data-sectime="500"
+                        style="position: absolute;top: 45%;width: 100%;text-align: center;">
+                        <h4>花见</h4>
+                        <h4>花开</h4>
+                    </div>
+                    <h2 class="js-animate animated animation-500"
+                        data-animate="fadeInUp"
+                        data-time="5000"
+                        data-sec="zoomOut"
+                        data-sectime="3000"
+                        style="position: absolute;top: 35%;width: 100%;text-align: center;">
+                        集
+                    </h2>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="5500"
+                        data-sec="zoomOut"
+                        data-sectime="2600"
+                        style="position: absolute;top: 25%;left: 18%;text-align: center;">
+                        温柔
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="5700"
+                        data-sec="zoomOut"
+                        data-sectime="2400"
+                        style="position: absolute;top: 35%;right: 20%;text-align: center;">
+                        善良
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="5900"
+                        data-sec="zoomOut"
+                        data-sectime="2200"
+                        style="position: absolute;top: 48%;left: 22%;text-align: center;">
+                        聪明
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6100"
+                        data-sec="zoomOut"
+                        data-sectime="2000"
+                        style="position: absolute;top: 50%;right: 48%;text-align: center;">
+                        美丽
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6300"
+                        data-sec="zoomOut"
+                        data-sectime="1800"
+                        style="position: absolute;top: 30%;left: 50%;text-align: center;">
+                        可爱
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6500"
+                        data-sec="zoomOut"
+                        data-sectime="1600"
+                        style="position: absolute;top: 63%;right: 33%;text-align: center;">
+                        性感
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6700"
+                        data-sec="zoomOut"
+                        data-sectime="1400"
+                        style="position: absolute;top: 36%;left: 25%;text-align: center;">
+                        贤惠
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6900"
+                        data-sec="zoomOut"
+                        data-sectime="1200"
+                        style="position: absolute;top: 53%;right: 25%;text-align: center;">
+                        萝莉
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="7100"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 55%;left: 30%;text-align: center;">
+                        御姐
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="7300"
+                        data-sec="zoomOut"
+                        data-sectime="800"
+                        style="position: absolute;top: 20%;right: 30%;text-align: center;">
+                        女王
+                    </h4>
+                    <h4 class="js-animate animated animation-800"
+                        data-animate="bounceInUp"
+                        data-time="9000"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 30%;width: 100%;text-align: center;">
+                        于一身
+                    </h4>
+                    <h4 class="js-animate animated animation-800"
+                        data-animate="bounceInLeft"
+                        data-time="9000"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">
+                        的
+                    </h4>
+                    <h4 class="js-animate animated animation-800"
+                        data-animate="zoomInDown"
+                        data-time="9000"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 50%;width: 100%;text-align: center;">
+                        新娘
+                    </h4>
+                    <div class="js-animate animated animation-800"
+                        data-animate="fadeInDown"
+                        data-time="10500"
+                        data-sec="flashing"
+                        data-time="900"
+                        style="position: absolute;top: 70%;width: 40%;right: 10%;height: 20%;text-align: center;background-color: rgba(255,255,255, .7);border-radius: 10px;">
+                        
+                    </div>
+                    <div class="js-animate animated animation-800"
+                        data-animate="fadeInDown"
+                        data-time="10500"
+                        style="position: absolute;top: 70%;width: 40%;right: 10%;height: 20%;text-align: center;">
+                        <p style="margin-top: 43%;color: #3a3f58;">新 娘</p>
+                        <img src="./public/meta/bride.png" style="position: absolute;bottom: -6px;width: 120%;left: -10%;">
+                    </div>
+                    <h3 class="js-animate animated animation-800"
+                        data-animate="fadeInRight"
+                        data-time="10500"
+                        style="position: absolute;top: 71%;width: 40%;right: 10%;text-align: center;">
+                        三 笠
+                    </h3>
+                </div>
+            </div>
+            <div class="page page4">
+                <div class="photo-wrap">
+                    <div 
+                        class="full-bg js-animate animated animation-5000" 
+                        style="background-image: url(./public/photo/7.jpg);width: 100%;height: 100%;"
+                        data-sec="zoomCycle" data-time="0">
+                    </div>
+                    <div 
+                        class="full-bg js-animate animated animation-600" 
+                        style="background-image: url(./public/photo/8.jpg);width: 100%;height: 100%;position: absolute;top: 0;left: 0;"
+                        data-animate="zoomIn" data-time="10500">
+                    </div>
+                    <div class="text-frame js-animate animated"
+                        data-animate="lightSpeedIn" data-time="1000"
+                        data-sec="lightSpeedOut"
+                        data-sectime="7500">
+                         
+                    </div>
+                    <div class="text-frame js-animate animated"
+                        data-animate="lightSpeedIn" data-time="2000"
+                        data-sec="lightSpeedOut"
+                        data-sectime="8000">
+                    </div>
+                </div>
+                <div class="ele-wrap">
+                    <h4 class="js-animate animated animation-800" 
+                        data-animate="myzoomIn" 
+                        data-time="1500"
+                        data-sec="zoomOut"
+                        data-sectime="800"
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">他不仅</h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="bounceInRight"
+                        data-time="2500"
+                        data-sec="flipOutY"
+                        data-sectime="1000"
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">风趣</h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="bounceInLeft"
+                        data-time="3000"
+                        data-sec="flipOutY"
+                        data-sectime="500"
+                        style="position: absolute;top: 50%;width: 100%;text-align: center;">幽默</h4>
+
+                    <div class="js-animate animated animation-500"
+                        data-animate="bounceInDown"
+                        data-time="4000"
+                        data-sec="zoomOutDown"
+                        data-sectime="500"
+                        style="position: absolute;top: 45%;width: 100%;text-align: center;">
+                        <h4>器宇</h4>
+                        <h4>轩昂</h4>
+                    </div>
+                    <h2 class="js-animate animated animation-500"
+                        data-animate="fadeInUp"
+                        data-time="5000"
+                        data-sec="zoomOut"
+                        data-sectime="3000"
+                        style="position: absolute;top: 35%;width: 100%;text-align: center;">
+                        而且
+                    </h2>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="5500"
+                        data-sec="zoomOut"
+                        data-sectime="2600"
+                        style="position: absolute;top: 25%;left: 18%;text-align: center;">
+                        英俊
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="5700"
+                        data-sec="zoomOut"
+                        data-sectime="2400"
+                        style="position: absolute;top: 35%;right: 20%;text-align: center;">
+                        潇洒
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="5900"
+                        data-sec="zoomOut"
+                        data-sectime="2200"
+                        style="position: absolute;top: 48%;left: 22%;text-align: center;">
+                        聪明
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6100"
+                        data-sec="zoomOut"
+                        data-sectime="2000"
+                        style="position: absolute;top: 50%;right: 48%;text-align: center;">
+                        善良
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6300"
+                        data-sec="zoomOut"
+                        data-sectime="1800"
+                        style="position: absolute;top: 30%;left: 50%;text-align: center;">
+                        诚恳
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6500"
+                        data-sec="zoomOut"
+                        data-sectime="1600"
+                        style="position: absolute;top: 63%;right: 33%;text-align: center;">
+                        开朗
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6700"
+                        data-sec="zoomOut"
+                        data-sectime="1400"
+                        style="position: absolute;top: 36%;left: 25%;text-align: center;">
+                        才华
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="6900"
+                        data-sec="zoomOut"
+                        data-sectime="1200"
+                        style="position: absolute;top: 53%;right: 25%;text-align: center;">
+                        细心
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="7100"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 55%;left: 30%;text-align: center;">
+                        勤劳
+                    </h4>
+                    <h4 class="js-animate animated animation-500"
+                        data-animate="fadeInRight"
+                        data-time="7300"
+                        data-sec="zoomOut"
+                        data-sectime="800"
+                        style="position: absolute;top: 20%;right: 30%;text-align: center;">
+                        总裁范
+                    </h4>
+                    <h4 class="js-animate animated animation-800"
+                        data-animate="bounceInUp"
+                        data-time="9000"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 30%;width: 100%;text-align: center;">
+                        能做饭
+                    </h4>
+                    <h4 class="js-animate animated animation-800"
+                        data-animate="bounceInLeft"
+                        data-time="9000"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 40%;width: 100%;text-align: center;">
+                        会挣钱
+                    </h4>
+                    <h4 class="js-animate animated animation-800"
+                        data-animate="zoomInDown"
+                        data-time="9000"
+                        data-sec="zoomOut"
+                        data-sectime="1000"
+                        style="position: absolute;top: 50%;width: 100%;text-align: center;">
+                        新郎
+                    </h4>
+                    <div class="js-animate animated animation-800"
+                        data-animate="fadeInDown"
+                        data-time="10500"
+                        data-sec="pulseing"
+                        data-time="900"
+                        style="position: absolute;top: 70%;width: 40%;left: 10%;height: 20%;text-align: center;background-color: rgba(255,255,255, .7);border-radius: 10px;">
+                        
+                    </div>
+                    <div class="js-animate animated animation-800"
+                        data-animate="fadeInDown"
+                        data-time="10500"
+                        style="position: absolute;top: 70%;width: 40%;left: 10%;height: 20%;text-align: center;">
+                        <p style="margin-top: 43%;color: #3a3f58;">新 郎</p>
+                        <img src="./public/meta/lang.png" style="position: absolute;bottom: -6px;width: 120%;left: -10%;">
+                    </div>
+                    <h3 class="js-animate animated animation-800"
+                        data-animate="fadeInRight"
+                        data-time="10500"
+                        style="position: absolute;top: 71%;width: 40%;left: 10%;text-align: center;">
+                        兵 长
+                    </h3>
+                </div>
+            </div>
+            <div class="page page5">
+                <div class="photo-wrap">
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="fadeIn" 
+                        data-time="500"
+                        style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 1;
+                        background-image: url(./public/photo/9.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="fadeInDown" 
+                        data-time="3000"
+                        style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 2;
+                        background-image: url(./public/photo/10.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="fadeInUp" 
+                        data-time="6000"
+                        style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 3;
+                        background-image: url(./public/photo/11.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="fadeIn" 
+                        data-time="9000"
+                        style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 4;
+                        background-image: url(./public/photo/12.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="rollIn" 
+                        data-time="12000"
+                        style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 5;
+                        background-image: url(./public/photo/18.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="rotateInDownRight" 
+                        data-time="15000"
+                        style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 6;
+                        background-image: url(./public/photo/14.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="rotateIn"
+                        data-time="18000"
+                        style="position: absolute;width: 100%;height: 38%;top: 0;left: 0;z-index: 7;
+                        background-image: url(./public/photo/15.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="rotateInDownRight" 
+                        data-time="18000"
+                        style="position: absolute;width: 100%;height: 62%;top: 38%;left: 0;z-index: 8;
+                        background-image: url(./public/photo/16.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="rotateInDownRight" 
+                        data-time="21000"
+                        style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 9;
+                        background-image: url(./public/photo/17.jpg);"></div>
+                    <div class="photo-box js-animate animated animation-2000" 
+                        data-animate="zoomIn"
+                        data-time="24000"
+                        style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;z-index: 10;
+                        background-image: url(./public/photo/13.jpg);"></div>
+                    <h4 class="js-animate animated animation-2000" 
+                        data-animate="myzoomIn"
+                        data-time="24000"
+                        style="position: absolute;width: 100%;bottom: 6%;left: 0;z-index: 11;text-align: center;line-height: 28px;">
+                        12月25日<br>
+                        成都市高新区会展中心
+                    </h4>
+                    <div class="text-frame js-animate animated"
+                        data-animate="zoomInLeft" data-time="1000"
+                        data-sec="pulseing"
+                        data-sectime="1000">
+                    </div>
+                    <div class="text-frame js-animate animated"
+                        data-animate="zoomInRight" data-time="1000"
+                        data-sec="pulseing"
+                        data-sectime="1500">
+                    </div>
+                </div>
+                <div class="ele-wrap">
+                </div>
+            </div>
+            <div class="page page6" style="position: relative;">
+                <div id="map"></div>
+                <div id="location-btn"><i class="iconfont" style="font-size: 32px;">&#xe616;</i></div>
+                <div id="map-msg">
+                    <p class="js-animate animated" data-animate="bounceInDown" data-time="0"><i class="iconfont red-icon">&#xe63e;</i>成都市高新区新国际会展中心，距离天府广场约13公里</p>
+                    <p class="js-animate animated" data-animate="bounceInLeft" data-time="1000"><i class="iconfont red-icon">&#xe622;</i>天府大道中段转世纪城路</p>
+                    <p class="js-animate animated" data-animate="bounceInRight" data-time="2000"><i class="iconfont red-icon">&#xe72b;</i>一号线世纪城站</p>
+                    <p class="js-animate animated" data-animate="bounceInUp" data-time="3000"><i class="iconfont red-icon">&#xe636;</i>有任何疑问请致电 新郎&新娘</p>
+                </div>
+        </div>
+    </div>
+    <span class="start"><i class="iconfont" style="color: #fff;font-size: 30px;">&#xe606;</i></span>
+    <audio id="mp3" src="./public/music/music.mp3" autoplay loop></audio>
+    <script src="./public/js/js.fullpage.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=S6EO9oPso0n8aTMvfH1g0aLUX6vGZx1l"></script>
+    <script>
+        // 滚屏动画控制
+
+        if (isMobile !== false) {
+            var loadTimer = setInterval(()=> {
+                console.log(loadSum)
+                if (loadSum >= 17) {
+                    start()
+                }
+            }, 300);
+        }
+
+        var domLists = []
+        var mapFlag = false
+
+        function start() {
+            clearInterval(loadTimer);
+
+            var forEach = [].forEach;
+
+            setTimeout(() => {
+                document.getElementById('loading-mask').style.display = 'none'
+            }, 100);
+            document.getElementsByClassName('wp-inner')[0].fullpage({
+                change: function (e) {
+                    clearTime()
+                    // 移除动画属性
+                    forEach.call(document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate'), function (v) {
+                        v.classList.add('hide');
+                        v.classList.remove(v.dataset['animate']);
+                        if (v.dataset['sec']) {
+                            v.classList.remove(v.dataset['sec']);
+                        }
+                    });
+                },
+                afterChange: function (e) {
+                    if (e.cur === 5 && !mapFlag) {
+                        initMap()
+                    }
+                    
+                    domLists = document.querySelectorAll('.page')[e.cur].querySelectorAll('.js-animate')
+                    forEach.call(domLists, v => {
+                        var time = v.dataset.time;
+                        v.timer = setTimeout(function () {
+                            v.classList.add(v.dataset['animate']);
+                            v.classList.remove('hide');
+                            if (v.dataset['sec']) {
+                                var time = v.dataset.sectime || 0
+                                v.sectimer = setTimeout( function() {
+                                    v.classList.remove(v.dataset['animate']);
+                                    v.classList.add(v.dataset['sec']);
+                                }, time);
+                            }
+                        }, time);
+                    })
+                }
+            });
+        }
+
+        function clearTime() {
+            domLists.forEach((dom, i, arr) => {
+                if (dom.timer) {
+                    clearTimeout(dom.timer);
+                }
+                if (dom.sectimer) {
+                    clearTimeout(dom.sectimer);
+                }
+                if(arr && arr.splice) {
+                    arr.splice(i, 1)
+                }
+            })
+        }
+
+        // 地图
+        function initMap() {
+            if (window.BMap) {
+                mapFlag = true
+                var mapCenter = [104.083002,30.5621]
+                var map = new BMap.Map("map", {minZoom: 10,maxZoom: 14})
+
+                map.centerAndZoom(new BMap.Point(mapCenter[0], mapCenter[1]), 13);
+
+                function ComplexCustomOverlay(point, text, mouseoverText){
+                  this._point = point;
+                  this._text = text;
+                  this._overText = mouseoverText;
+                }
+                ComplexCustomOverlay.prototype = new BMap.Overlay();
+                ComplexCustomOverlay.prototype.initialize = function(map){
+                  this._map = map;
+                  var div = this._div = document.createElement("div");
+                  div.style.position = "absolute";
+                  div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+                  div.style.backgroundColor = "#E60000";
+                  div.style.borderRadius = "3px";
+                  div.style.color = "white";
+                  div.style.height = "18px";
+                  div.style.padding = "2px 4px";
+                  div.style.lineHeight = "18px";
+                  div.style.whiteSpace = "nowrap";
+                  div.style.MozUserSelect = "none";
+                  div.style.fontSize = "12px"
+                  var span = this._span = document.createElement("span");
+                  div.appendChild(span);
+                  span.appendChild(document.createTextNode(this._text));      
+                  var that = this;
+
+                  var arrow = this._arrow = document.createElement("div");
+                  // arrow.style.background = "url(http://map.baidu.com/fwmap/upload/r/map/fwmap/static/house/images/label.png) no-repeat";
+                  arrow.style.position = "absolute";
+                  arrow.style.width = "0";
+                  arrow.style.height = "0";
+                  arrow.style.top = "22px";
+                  arrow.style.left = "10px";
+                  arrow.style.overflow = "hidden";
+                  arrow.style.border = "6px solid transparent";
+                  arrow.style.borderTop = "6px solid #E60000";
+                  div.appendChild(arrow);
+
+                  map.getPanes().labelPane.appendChild(div);
+                  
+                  return div;
+                }
+                ComplexCustomOverlay.prototype.draw = function(){
+                  var map = this._map;
+                  var pixel = map.pointToOverlayPixel(this._point);
+                  this._div.style.left = pixel.x - parseInt(this._arrow.style.left) + "px";
+                  this._div.style.top  = pixel.y - 30 + "px";
+                }
+                    
+                var myCompOverlay = new ComplexCustomOverlay(new BMap.Point(mapCenter[0], mapCenter[1]), "婚礼","N and Y");
+
+                map.addOverlay(myCompOverlay);
+
+                document.querySelector('#location-btn').addEventListener('click', () => {
+                    map.panTo(new BMap.Point(mapCenter[0], mapCenter[1]))
+                })
+            }
+        }
+
+        // 音乐播放控制
+        window.onload = function () {
+            let mp3 = document.querySelector('#mp3')
+            let playBtn = document.querySelector('#play-btn')
+            let play
+
+            mp3.load()
+
+            document.addEventListener("WeixinJSBridgeReady", function () { 
+                mp3.play()
+                if (!mp3.paused) {
+                    this.style.animationPlayState = 'running'
+                    mp3.play()
+                    play = true
+                }
+            }, false)
+
+            play = !mp3.paused && mp3.readyState === 4
+
+            if (play) {
+                playBtn.style.animationPlayState = 'running'
+            } else {
+                playBtn.style.animationPlayState = 'paused'
+            }
+
+            playBtn.addEventListener('click', function(event) {
+                if (play) {
+                    this.style.animationPlayState = 'paused'
+                    mp3.pause()
+                    play = false
+                } else {
+                    if (mp3.readyState === 4) {
+                        this.style.animationPlayState = 'running'
+                        mp3.play()
+                        play = true
+                    } 
+                }
+            })
+        }
+    </script>
+</body>
+</html>
