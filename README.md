@@ -7,6 +7,7 @@ clone 到本地可直接打开index.html 文件查看效果, 仅支持移动端,
 ```
 git clone https://github.com/nijun008/weddingInvitations.git
 cd weddingInvitations
+npm install
 node app
 ```
 默认端口为8081, 可以在app.js中修改端口
